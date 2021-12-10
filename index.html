@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+         <script>
+             function playSound () {
+                 document.getElementById('click').play();
+             }
+        </script>
+        <audio id="click" src="sounds/typewriter-key.mp3"></audio>
+        <audio id="ding" src="sounds/typewriter-ding.wav"></audio>
+        <audio id="gear" src="sounds/gear.mp3" loop="loop"></audio>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear" onclick="playSound()">C</button>
+					<button class="operator" id="backspace" onclick="playSound()">CE</button>
+					<button class="operator" id="%" onclick="playSound()">%</button>
+					<button class="operator" id="/" onclick="playSound()">&#247;</button>
+					<button class="number" id="7" onclick="playSound()">7</button>
+					<button class="number" id="8" onclick="playSound()">8</button>
+					<button class="number" id="9" onclick="playSound()">9</button>
+					<button class="operator" id="*" onclick="playSound()">&times;</button>
+					<button class="number" id="4" onclick="playSound()">4</button>
+					<button class="number" id="5" onclick="playSound()">5</button>
+					<button class="number" id="6" onclick="playSound()">6</button>
+					<button class="operator" id="-" onclick="playSound()">-</button>
+					<button class="number" id="1" onclick="playSound()">1</button>
+					<button class="number" id="2" onclick="playSound()">2</button>
+					<button class="number" id="3" onclick="playSound()">3</button>
+					<button class="operator" id="+" onclick="playSound()">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0" onclick="playSound()">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=" onclick="playSound()">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
